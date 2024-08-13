@@ -1,0 +1,376 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.p-slider-handle {
+    @apply bg-white border-2 border-blue;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+a {
+    @apply no-underline font-roboto text-lg font-normal;
+}
+
+label {
+    @apply font-roboto font-normal;
+}
+
+.p-togglebutton.p-highlight .p-button {
+    @apply bg-orange text-white font-roboto;
+}
+
+.p-button-label {
+    @apply font-roboto font-normal;
+}
+
+.p-slider .p-slider-range {
+    @apply bg-orange font-roboto w-11/12 mx-auto;
+}
+.p-dropdown:not(.p-disabled).p-focus {
+    @apply shadow-none border-orange font-roboto;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+    @apply bg-orange text-white font-roboto;
+}
+
+input:focus {
+    @apply outline-orange border-orange ring-orange;
+}
+
+.p-tabview-title {
+    @apply font-bold font-roboto;
+}
+
+.p-checkbox.p-variant-filled.p-highlight .p-checkbox-box {
+    @apply bg-orange font-roboto;
+}
+
+.p-radiobutton.p-highlight .p-radiobutton-box {
+    @apply bg-orange border font-roboto;
+}
+
+.p-radiobutton-box {
+    @apply border font-roboto;
+}
+
+.p-tabview-selected {
+    @apply border-b-2 border-b-orange font-roboto;
+}
+
+.p-tabview-nav {
+    @apply flex flex-col md:flex-row font-roboto;
+}
+
+.p-inputswitch.p-highlight .p-inputswitch-slider {
+    @apply bg-orange font-roboto;
+}
+
+p {
+    @apply font-roboto text-lg;
+}
+
+.p2 {
+    @apply font-roboto text-base;
+}
+
+.p3 {
+    @apply font-roboto text-lg;
+}
+
+label {
+    @apply block text-sm font-medium leading-6 text-gray-900 max-h-12;
+}
+
+input {
+    @apply block w-full rounded-md border-0 p-3 text-gray-900 max-h-12 ring-1 ring-inset ring-gray-300 focus:ring-1 focus:ring-orange sm:text-sm sm:leading-6;
+}
+
+select {
+    @apply block w-full rounded-md border-0 p-3 text-gray-900 max-h-12 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-black sm:text-sm sm:leading-6;
+}
+
+h1 {
+    @apply text-4xl font-bold font-roboto md:text-5xl lg:text-6xl;
+}
+
+h2 {
+    @apply text-4xl leading-tight font-bold font-roboto md:text-4xl lg:text-5xl;
+}
+
+h3 {
+    @apply text-3xl font-bold font-roboto md:text-4xl lg:text-4xl;
+}
+
+h4 {
+    @apply text-2xl font-bold font-roboto md:text-2xl lg:text-3xl;
+}
+
+h5 {
+    @apply text-xl font-bold font-roboto md:text-xl lg:text-2xl;
+}
+
+h6 {
+    @apply text-lg font-bold font-roboto lg:text-xl;
+}
+
+.black-bar {
+    @apply border-t-2 border-black w-full opacity-15;
+}
+
+.white-vertical-bar {
+    @apply h-full bg-white w-0.5 md:w-1;
+}
+
+.p-tabview-selected {
+    @apply border-b-2 border-b-orange pb-1;
+}
+
+nav {
+    z-index: 10;
+}
+
+nav.scrolled {
+    @apply shadow-2xl;
+    border-bottom: 0;
+}
+
+/*.p-highlight {*/
+/*    @apply border-b-2 border-b-orange pb-1;*/
+/*}*/
+
+/* alpine*/
+
+[x-cloak] {
+    display: none !important;
+}
+
+nav {
+    @apply z-50 shadow-lg md:rounded-lg bg-white w-full font-roboto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.model-box {
+    @apply bg-white shadow-lg border space-y-3 rounded-lg;
+}
+
+.merk-box {
+    @apply bg-blue h-20 md:h-32 lg:h-44 w-20 md:w-32 lg:w-44 rounded-lg flex items-center justify-center align-middle;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+    -webkit-appearance: none;
+}
+
+/* web */
+
+.review-slider-style {
+    @apply bg-grey rounded-lg z-0 py-5 px-5 text-left;
+}
+
+.p-dialog-titlebar-close {
+    @apply bg-black;
+}
+
+.hero-auto {
+    @apply -z-10;
+}
+
+.p-link {
+    @apply text-white;
+}
+
+.p-galleria-item-nav {
+    @apply hidden md:block;
+}
+
+/*mobile*/
+
+.mobile-logo {
+    @apply w-8 h-9 self-center font-roboto;
+}
+
+.mobile-hamburger {
+    @apply w-6 h-6 self-center align-middle font-roboto;
+}
+
+/*Accodrion css*/
+.p-accordion-header {
+    @apply bg-blue text-white py-3 font-bold cursor-pointer border-b font-roboto;
+}
+
+.p-accordion-content {
+    @apply bg-blue text-white p-3 font-roboto;
+}
+
+.p-accordion-header-link {
+    @apply bg-blue text-white p-3 cursor-pointer font-roboto;
+}
+
+.input:focus {
+    @apply border-orange font-roboto;
+}
+
+/*side nav*/
+.side-nav-dot {
+    @apply w-2.5 h-2.5 bg-transparent rounded-full border border-grey mt-2.5 cursor-pointer;
+}
+
+.orange-button {
+    @apply bg-orange font-roboto border border-orange text-white w-full sm:w-auto text-center py-2 px-6 rounded-lg max-h-12 hover:shadow-lg active:shadow-md transform hover:-translate-y-px active:translate-y-0 transition duration-200;
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    @apply border-b-2 border-orange pb-4;
+}
+
+/*Galleria css*/
+.p-galleria .p-galleria-close .p-icon {
+    @apply text-white;
+}
+
+.p-galleria-thumbnail-container {
+    @apply bg-transparent;
+}
+
+.p-galleria-thumbnail-prev {
+    @apply hidden;
+}
+.p-galleria-thumbnail-next {
+    @apply hidden;
+}
+
+.carousel__pagination-button:hover:after {
+    @apply bg-orange;
+}
+.input:focus {
+    @apply ring-orange;
+}
+.carousel__pagination-button--active:after {
+    @apply bg-orange h-3 w-3 rounded-full;
+}
+.p-inputtext:enabled:focus {
+    @apply border-orange shadow-none;
+}
+.carousel__pagination-button:after {
+    @apply h-3 w-3 rounded-full;
+}
+.p-galleria .p-galleria-item-nav .p-icon {
+    @apply text-white;
+}
+.p-carousel-indicators {
+    @apply hidden;
+}
+/*Dialog css*/
+.p-dialog-header-close-icon {
+    @apply text-black;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon:focus-visible {
+    @apply shadow-none;
+}
+
+.p-button {
+    @apply shadow-none;
+}
+
+.grey-button {
+    @apply bg-grey font-roboto border border-grey text-black w-full sm:w-auto text-center py-2 px-6 rounded-lg max-h-12 hover:shadow-lg active:shadow-md transform hover:-translate-y-px active:translate-y-0 transition duration-200;
+}
+
+.clear-white-button {
+    @apply text-white font-roboto border-white w-full sm:w-auto text-center border flex justify-center items-center rounded-lg py-2 px-6 max-h-12 hover:shadow-lg active:shadow-md transform hover:-translate-y-px active:translate-y-0 transition duration-200;
+}
+
+.clear-black-button {
+    @apply text-black font-roboto border-black w-full sm:w-auto text-center border flex justify-center items-center rounded-lg py-2 px-6 max-h-12 hover:shadow-lg active:shadow-md transform hover:-translate-y-px active:translate-y-0 transition duration-200;
+}
+
+.icon-button-sm {
+    @apply relative font-roboto sm:static sm:flex flex-row gap-2 items-center;
+}
+
+.icon-button-md {
+    @apply relative font-roboto md:static md:flex flex-row gap-2 items-center;
+}
+
+.checkbox-active {
+    @apply py-2 px-4 border border-black border-spacing-2 text-white rounded-lg bg-blue;
+}
+
+.contact-inputs {
+    @apply rounded-lg p-3;
+}
+
+.checkbox {
+    @apply py-2 px-4 border border-black border-spacing-2 text-black rounded-lg;
+}
+
+/*range slider*/
+
+input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+    -webkit-appearance: none;
+
+    /* @apply w-6 h-6 appearance-none pointer-events-auto; */
+}
+
+.range-slider {
+    @apply relative w-full h-1 rounded-lg bg-grey;
+}
+
+.range-slider .progress {
+    @apply absolute left-1/4 right-0 h-full rounded-lg bg-blue;
+}
+
+.range-slider input[type="range"] {
+    @apply absolute w-full h-1 appearance-none pointer-events-none;
+    background: none;
+}
+
+.range-slider .range-max::-webkit-slider-thumb {
+    @apply pointer-events-auto appearance-none w-5 h-5 bg-white border-2 border-solid border-black rounded-full;
+}
+
+.range-slider .range-min::-webkit-slider-thumb {
+    @apply pointer-events-auto appearance-none w-5 h-5 bg-white border-2 border-solid border-black rounded-full;
+}
+
+.range-text {
+    @apply border-none text-center focus:outline-none outline-none;
+}
+
+.dropdown-searchbar {
+    @apply border-grey;
+}

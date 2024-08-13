@@ -1,0 +1,43 @@
+Functies:
+
+Aanbod pagina: 
+ModelController.php display functie geeft data door via props en in de aanbod functie word het door gegeven aan de model.vue en die geeft de posts weer. 
+
+De filterdata functie zet parameters in de url gebaseerd op de inputs op de aanbod pagina en de getUrlData functie haalt de parameters uit de url en filterd de data door de json functie in de modelcontroller en zet het in de customposts.value wat weer door wordt gegeven naar model.vue 
+
+de getsliders functie haalt de hoogste en laagste value uit de verkooprijs_particulier , bouwjaar en tellerstand collomen.
+
+aanbod/uitgebreidzoeken/home
+
+De getOption haalt de opties voor de inputs uit de database en voor elke unieke column maakt ie een optie aan.
+
+de form inputs op deze pagina worden doorgegeven aan de search functie in modelcontroller.php en worden daarna door de geturldata functie behandelt.
+
+Cargo wbehook endpoint:
+de data van de cargo webhook wordt behandelt in de cargocontroller.php en wordt hier ook in de database gezet.
+
+Authenticatie webhook: 
+in config/baseauth.php kun je inlog informatie aangeven en in middleware/basicauthenticate.php wordt de inlog gecontroleerd
+
+Bugs uit mijn hoofd:
+
+1. Als je via een van de forms een post request doet naar de aanbod pagina met filters worden somige filters wel door gegeven alleen niet gehighlight of correct toegepast (carroserie , brandstof, de sliders en transmissie)
+
+2.de sorteer op prijs knop op aanbod werkt niet(code ook in modelcontroller.php)
+
+3.ik heb mobiel niet intensief op bugs getest dus ik weet niet of daar nog problemen zijn
+
+4. de facebook sdk doet het nog niet  op de live versie
+
+functionaliteiten die nog moeten worden toegepast uit mijn hoofd:
+1. contact formulier
+
+2. de whatsapp knoppen
+
+3. lease calculator en lease prijs in de database 
+
+4. content vullen (bijv onmoet ons team op over ons pagina)
+
+5. nieuwsbrief moet nog worden gemaakt
+
+
