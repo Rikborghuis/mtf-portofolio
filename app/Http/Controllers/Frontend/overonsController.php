@@ -11,7 +11,7 @@ class overonsController extends Controller
 {
     public function index()
     {
-        $fb = new \JoelButcher\Facebook\Facebook([
+        /*$fb = new \JoelButcher\Facebook\Facebook([
             'app_id' => '{app-id}',
             'app_secret' => '7a7db09305dc870a5d9a5df41f031af0',
             'default_graph_version' => 'v20.0',
@@ -38,10 +38,10 @@ class overonsController extends Controller
                 'full_picture' => $postArray['full_picture'] ?? ''
             ];
         }
-
+        */
 
         //log::info('dit zijn de params ', $user);
 
-        return Inertia::render('Overons', ['posts' => $postsArray]);
+        return Inertia::render('Overons');
     }
 }
